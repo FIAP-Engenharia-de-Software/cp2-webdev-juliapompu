@@ -7,10 +7,26 @@
 // - Retornar `"Acertou!"` se o número gerado for igual ao `palpite`;
 // - Retornar `"Errou! Tente novamente!"` se o palpite estiver incorreto.
 
+max = 10
+palpite = (1,10)
+
 function adivinharNumero(max, palpite) {
   // TODO: implementar função
+  if(max>palpite){
+    console.log(`Errou`)
+  }
+
+  if(max<palpite){
+    console.log(`Erro`)
+  }
+
+  if(max==palpite){
+    console.log(`Acertou`)
+  }
+return
 }
 
+console(adivinharNumero);
 
 // NÃO REMOVA O CÓDIGO ABAIXO
 module.exports = { adivinharNumero };

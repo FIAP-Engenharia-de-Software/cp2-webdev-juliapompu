@@ -10,8 +10,17 @@
 
 function saudacao(nome, isLogged) {
   nome = nome || "Visitante";
+  if(nome != String){
+    console.log(`Insira seu nome`)
+  }
+  if(isLogged != true){
+    return NotLogged
+  }
   return isLogged || "Olá, " + nome + "!";
+  
 }
+
+saudacao(CAIO);
 
 // Testando a função
 console.log(saudacao(null, true)); // Esperado: "Olá, Visitante!"
